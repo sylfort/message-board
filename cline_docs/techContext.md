@@ -18,6 +18,7 @@
 - **Schema**: Defined in lib/database.types.ts
 - **Client**: Initialized in lib/supabaseClient.ts
 - **Types**: User, ChatMessage, JobPost, LinkPreview
+- **Schema verified against Supabase database.**
 
 ## Technical Constraints
 - Must follow repository pattern for data access
