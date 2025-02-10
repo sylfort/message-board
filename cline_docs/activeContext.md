@@ -1,7 +1,9 @@
 # Active Context
 
 ## Current Focus
-- Updating documentation to reflect successful schema verification.
+- Added server actions for handling message operations
+- `fetchMessages()`: Fetches messages from Supabase
+- `postMessage(content: string)`: Posts new message to Supabase
 
 ## Recent Changes
 - Verified database schema matches Supabase tables (no discrepancies found).

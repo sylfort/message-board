@@ -1,25 +1,13 @@
 # Technical Context
 
-## Technologies Used
-- **Supabase**: PostgreSQL database with realtime capabilities
-- **TypeScript**: Strongly typed JavaScript
-- **Next.js**: React framework for server-side rendering
+## Message Board Architecture
 
-## Development Setup
-- **Database Client**: @supabase/supabase-js
-- **Environment Variables**:
-  - NEXT_PUBLIC_SUPABASE_URL
-  - NEXT_PUBLIC_SUPABASE_ANON_KEY
-- **Script Execution**:
-  - ts-node for running TypeScript scripts
-  - ES module configuration required for imports
+### Server Actions
+- Added server actions for handling message operations
+- `fetchMessages()`: Fetches messages from Supabase
+- `postMessage(content: string)`: Posts new message to Supabase
 
-## Database Implementation
-- **Schema**: Defined in lib/database.types.ts
-- **Client**: Initialized in lib/supabaseClient.ts
-- **Types**: User, ChatMessage, JobPost, LinkPreview
-- **Schema verified against Supabase database.**
-
+### Database Integration
 ## Technical Constraints
 - Must follow repository pattern for data access
 - Error handling must follow project standards
